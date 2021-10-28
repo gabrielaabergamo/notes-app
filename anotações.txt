@@ -1,0 +1,9 @@
+> const fs = require('fs') -> require carrega o módulo fs; o valor retornado fica na const fs
+
+> fs.writeFileSync(nome_arquivo, conteúdo) -> escrever no arquivo
+
+> fs.appendFileSync(nome_arquivo, conteúdo) -> concatenar com arquivo
+
+> cada módulo tem seu próprio escopo
+const aux = require('./aux.js') roda o arquivo aux.js
+no arquivo aux, precisamos dar um export.modules = (variaveis,funções,etc que formos usar)
