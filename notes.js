@@ -50,8 +50,18 @@ const removeNotes = (title) => {
     saveNotes(searchNotes)
 }
 
+const listNotes = () => {
+    console.log(chalk.magenta.inverse('Your notes:'))
+
+    const notes = loadNotes()
+    notes.forEach(element => {
+        console.log(element.title)
+    })
+}
+
 module.exports = {
     getNotes: getNotes,
     addNotes: addNotes,
-    removeNotes: removeNotes
+    removeNotes: removeNotes,
+    listNotes: listNotes
 }
