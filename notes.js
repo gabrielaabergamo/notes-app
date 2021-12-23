@@ -75,5 +75,6 @@ module.exports = {
     addNotes: addNotes,
     removeNotes: removeNotes,
     listNotes: listNotes,
-    readNotes: readNotes
+    readNotes: readNotes,
+    saveNotes: saveNotes
 }
